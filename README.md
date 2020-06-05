@@ -71,17 +71,17 @@ For different accuracies I got different results:
 - FP32:
   - The total model loading time is : 821.239 ms
   - The total inference time is : 23.553 sec
-  - The total FPS is : 2.505 fps
+  - The total FPS is : 9.505 fps
   
 - FP16:
   - The total model loading time is : 593.893 ms
   - The total inference time is : 23.562 sec
-  - The total FPS is : 2.504 fps
+  - The total FPS is : 9.504 fps
   
 - INT8:
   - The total model loading time is : 807.322ms
   - The total inference time is : 23.525 sec
-  - The total FPS is : 2.508 fps
+  - The total FPS is : 9.508 fps
   
 ## Results
 There is very little difference in my results for each precision level. In terms of accuracy, results were extremely similar as well. I can't come to a conclusion based off of results only a millisecond apart. The only real outlier I found was the loading time for the FP16 precision. It was lower than both INT8 and FP32 by a big margin. This is extremely odd seeing as the FP16 accuracy requires more memory and computational power as INT8 and FP16. My results show that statistics can differ greatly sometimes and don't always stick to the rules.
